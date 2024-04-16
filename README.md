@@ -4,6 +4,6 @@ This project contains a JSON data verification method implemented in Java using 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/gszczure/Verifier.git`
-2. Navigate to the project directory: `cd Verifier`
+1. Clone the repository: `https://github.com/gszczure/Verifier-JSON-data.git`
+2. Navigate to the project directory: `cd Verifier-JSON-data`
 3. Install dependencies: `mvn install`
