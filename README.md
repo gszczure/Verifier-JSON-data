@@ -17,4 +17,4 @@ When running this code, it's possible to receive three different results:
 - true: If the asterisk is not present in the resource.
 - Exception "...": When one of the Role Policy conditions is not met."
 
-Additionally, in the example.json file, an asterisk is present in the resource field. Therefore, without modifying the code, the result will be false
+Additionally, in the example.json file, an asterisk is present in the resource field. Therefore, without modifying the code, the result will be false.
