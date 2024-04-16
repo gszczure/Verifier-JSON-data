@@ -13,6 +13,6 @@ This project contains a JSON data verification method implemented in Java using 
 
 When running this code, it's possible to receive three different results:
 
-false: When the resource contains an asterisk (*).
-true: If the asterisk is not present in the resource.
-Exception "...": When one of the Role Policy conditions is not met."
+- false: When the resource contains an asterisk (*).
+- true: If the asterisk is not present in the resource.
+- Exception "...": When one of the Role Policy conditions is not met."
