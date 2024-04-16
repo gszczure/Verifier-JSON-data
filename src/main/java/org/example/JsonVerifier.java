@@ -29,6 +29,10 @@ public class JsonVerifier {
 
             for(int i = 0; i < statements.length(); i++) {
                 JSONObject statement = statements.getJSONObject(i);
+                String effect = statement.getString("Effect");
+                if (!effect.equals("Allow") && !effect.equals("Deny")) {
+                    throw new Exception("Invalid 'Effect' field value ");
+                }
                 String resourcee = statement.getString("Resource");
                 if (resourcee.equals("*")) {
                     return false;
@@ -48,7 +52,7 @@ public class JsonVerifier {
      }
 
     public static void main(String[] args) throws Exception {
-        String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/main/java/org/example/package.json";
+        String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/main/java/org/example/example.json";
         boolean result = verifyMethod(filePath);
         System.out.println(result);
     }
