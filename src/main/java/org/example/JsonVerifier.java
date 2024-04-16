@@ -52,7 +52,7 @@ public class JsonVerifier {
      }
 
     public static void main(String[] args) throws Exception {
-        String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/main/java/org/example/example.json";
+        String filePath = "src/main/java/org/example/example.json";
         boolean result = verifyMethod(filePath);
         System.out.println(result);
     }
