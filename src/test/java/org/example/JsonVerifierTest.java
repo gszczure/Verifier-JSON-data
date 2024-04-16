@@ -37,9 +37,16 @@ public class JsonVerifierTest {
         String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/test/java/org/example/invalid_effect.json";
         assertThrows(Exception.class, () -> JsonVerifier.verifyMethod(filePath));
     }
+
     @Test
     public void testVerify_LongPolicyName_ThrowsException() {
         String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/test/java/org/example/long_policy_name.json";
+        assertThrows(Exception.class, () -> JsonVerifier.verifyMethod(filePath));
+    }
+
+    @Test
+    public void testVerify_NullPolicyName_ReturnsFalse() {
+        String filePath = "/Users/grzegorz/IdeaProjects/Verifier/src/test/java/org/example/null_policy_name.json";
         assertThrows(Exception.class, () -> JsonVerifier.verifyMethod(filePath));
     }
 }
