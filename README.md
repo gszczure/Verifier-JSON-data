@@ -8,7 +8,7 @@ This project contains a JSON data verification method implemented in Java using 
 2. Navigate to the project directory: `cd Verifier-JSON-data`
 3. Install dependencies: `mvn install`
 
-# IntelliJ IDEA
+## instalation in IntelliJ IDEA
 
 1. Open IntelliJ IDEA: Launch IntelliJ IDEA on your computer.
 2. Open the clone window: Select "Get from Version Control" from the "File" menu or click the "Get from VCS" button on the IntelliJ welcome screen.
